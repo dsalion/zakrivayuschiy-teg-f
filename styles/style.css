@@ -156,6 +156,11 @@
   border: none;
 }
 
+.card__icon-button {
+  background: transparent;
+  border: none;
+}
+
 .button {
   border: 2px solid var(--accent-color);
   cursor: pointer;
