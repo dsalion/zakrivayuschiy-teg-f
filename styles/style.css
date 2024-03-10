@@ -74,7 +74,7 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  inset-inline-start: -20px;
+  left: -20px;
   animation: ukazatel 0.5s ease-in-out infinite alternate;
   
 }
@@ -127,7 +127,7 @@
   object-position: center;
   inline-size: 100%;
   block-size: clamp(23.438rem, 30.141vw + 16.373rem, 43.5rem);
-  border: 3px solid var(--accent-color);
+  border: 2px solid var(--accent-color);
   
 }
 
@@ -136,12 +136,16 @@
 }
 
 .watermark {
-  
-  
+  font-size: 14px;
+  font-weight: 400;
+  text-shadow: -1px 0 var(--bg-color), 0 1px var(--bg-color), 1px 0 var(--bg-color), 0 -1px var(--bg-color);
+  font-family: var(--accent-font);
   mix-blend-mode: hard-light;
   position: absolute;
   top: 20px;
   right: 20px;
+  opacity: 50%;
+  
 }
 
 .like {
