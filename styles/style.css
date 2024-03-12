@@ -47,12 +47,12 @@
    width: var(--card-size);
  }
 
-.main__header {
+.header__logo {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   margin-block-start: clamp(7.25rem, 1.878vw + 6.81rem, 8.5rem);
 }
 
-.sub__header {
+.main__header {
   padding-block-start: clamp(0.875rem, 0.765rem + 0.4695vw, 1.1875rem);
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
@@ -104,7 +104,7 @@
   content: "▶";
   position: absolute;
   left: -20px;
-  animation: ukazatel 0.5s ease-in-out infinite alternate;
+  animation: pointer 0.5s ease-in-out infinite alternate;
 }
 
 .theme-menu__button:disabled {
@@ -149,7 +149,7 @@
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
-  block-size: clamp(23.438rem, 30.141vw + 16.373rem, 43.5rem);
+  block-size: var(--card-size);
   border: 2px solid var(--accent-color);
   
 }
@@ -171,7 +171,7 @@
   z-index: 1;
 }
 
-.like {
+.buttons__like {
   display: flex;
   align-items: center;
   justify-content: end;
@@ -236,13 +236,6 @@
   transform: translate(0);
 }
 
-.heart {
-  transform-origin: center;
-}
-
-.sparks {
-  opacity: 0;
-}
 
 .save__memories {
   display: flex;
@@ -278,9 +271,19 @@
   height: 100%;
  }
 
-.button__text-ok {
+
+.modal__text {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  mix-blend-mode: difference;
+  color: var(--like-hover-color);
+  font-weight: 400;
   text-transform: uppercase;
 }
+
 
 dialog[open] {
  max-width: 357px;
@@ -299,13 +302,13 @@ dialog[open] {
   margin: 30px;
 }
 
-.button__icon-save {
+.modal__icon {
   width: 80px;
   height: 48px;
   color: var(--accent-color);
 }
 
-.button__ok {
+.modal__button__ok {
   min-width: 293px;
 }
 
@@ -337,6 +340,8 @@ dialog::backdrop {
   .save__content {
     margin: 30px 42px;
   }
+
+ 
 }
 
 .img__opacity {
@@ -366,3 +371,4 @@ dialog::backdrop {
 .img__sepia {
   filter: sepia(80%);
 }
+

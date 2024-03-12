@@ -12,7 +12,7 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
-@keyframes ukazatel {
+@keyframes pointer {
     
     from {
       transform: translate(0);
@@ -22,9 +22,16 @@
     }
   }
 
-/* вот тут не совсем понятно, по описанию обратно перекрашивается за 0.3 секунды, 
-по макету в фигме если зайти в "посмотреть анимацию" мнгновенно. Укажи пожалуйста в ревью какой вариант выбрать
- 
+
+.heart {
+    transform-origin: center;
+}
+
+.contour {
+  fill: var(--accent-color);
+  transform: fill 0.1 linear;
+}
+
 .core {
 fill: var(--bg-color);
 transition: fill 0.3s linear 0.03s;
@@ -33,9 +40,11 @@ transition: fill 0.3s linear 0.03s;
 .main-body {
 fill: var(--bg-color);
 transition: fill 0.3s linear;
-  
- }
-*/
+}
+
+.sparks {
+  opacity: 0;
+}
 
 .like-icon:hover .core {
   fill: var(--like-hover-svg);
@@ -49,12 +58,12 @@ transition: fill 0.3s linear;
 
 .like-icon:active .core {
   fill: var(--like-color);
-  transition: fill 0.3s linear 0.03s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:active .main-body {
   fill: var(--like-color);
-  transition: fill 0.3s linear 0.2s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .core {
@@ -64,12 +73,12 @@ transition: fill 0.3s linear;
 
 .like-icon.is-liked .main-body {
   fill: var(--like-color);
-  transition: fill 0.3s linear 0.2s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--like-color);
-  transition: fill 0.3s linear 0.4s;
+  transition: fill 0.3s linear 0.06s;
 }
 
 @keyframes heart {
@@ -91,11 +100,11 @@ transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .sparks {
-  animation: spark 0.3s ease-in 0.4s 1 alternate;
+  animation: spark 0.3s ease-in 0.3s 1 alternate;
 }
 
 .like-icon.is-liked .heart {
-  animation: heart 0.3s ease-in 0.3s 1 alternate;
+  animation: heart 0.3s ease-in 0.1s 1 alternate;
 }
 
 
