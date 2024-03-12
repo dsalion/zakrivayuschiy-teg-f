@@ -55,7 +55,7 @@
             <div class="div__image">
             <span class="watermark">&lt;/HTML&gt;</span>
             <img 
-            class="img img_oneway"
+            class="img"
             src="./images/oneway.jpg"
             alt="город, две стрелочки с надписью один путь">
             </div>
@@ -99,7 +99,7 @@
             <div class="div__image">
             <span class="watermark">&lt;/HTML&gt;</span>
             <img 
-            class="img img_oneway"
+            class="img img__opacity"
             src="./images/strach.jpg"
             alt="серочерная абстракция">
             </div>
@@ -144,7 +144,7 @@
             <div class="div__image">
             <span class="watermark">&lt;CSS&gt;</span>
             <img 
-            class="img img_oneway"
+            class="img img__grayscale"
             src="./images/project.jpg"
             alt="человек идущий перед стеной с граффити">
             </div>
@@ -152,7 +152,7 @@
               <p class="article__text">Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и смениться ожиданием провала. 
                 Или вы, наоборот, могли вдохновиться успехами и поверить в себя.</p>
               <p class="article__text">
-                Ужасно злился когда проект не сходился по ПП. Все время приходилось 
+                Ужасно злился когда проект не сходился по ПП. Приходилось переделывать
               </p>
           </div>
           <div class="like">
@@ -188,7 +188,7 @@
             <div class="div__image">
             <span class="watermark">&lt;desigions&gt;</span>
             <img 
-            class="img img_oneway"
+            class="img img__bright"
             src="./images/fonar.jpg"
             alt="женщина осматривающая лампу">
             </div>
@@ -233,7 +233,7 @@
             <div class="div__image">
             <span class="watermark">care</span>
             <img 
-            class="img img_oneway"
+            class="img img__cont_bright"
             src="./images/tel.jpg"
             alt="девушка смотрит в телефон">
             </div>
@@ -278,7 +278,7 @@
             <div class="div__image">
             <span class="watermark">&lt;support&gt;</span>
             <img 
-            class="img img_oneway"
+            class="img img__saturate"
             src="./images/tea.jpg"
             alt="мужчина из доставки на электросамокате">
             </div>
@@ -321,7 +321,7 @@
             <div class="div__image">
             <span class="watermark">&lt;lifes-style: none;&gt;</span>
             <img 
-            class="img img_oneway"
+            class="img img__invert"
             src="./images/traffic.jpg"
             alt="город, поезд, автомобили, траффик">
             </div>
@@ -365,7 +365,7 @@
             <div class="div__image">
             <span class="watermark">&lt;experience&gt;</span>
             <img 
-            class="img img_oneway"
+            class="img img__sepia"
             src="./images/world.jpg"
             alt="мужчина перед которым открыт весь мир">
             </div>
@@ -409,13 +409,21 @@
       </section>
       <section class="save__memories">
         
-          <button class="button button__save" type="button">
+          <button class="button button__save" type="button" aria-controls="dialog-id" onclick="window['dialog-id'].showModal()" >
           <svg class="button__icon" viewBox="0 0 40 40">
             <use href="svg/floppy.svg#floppy" />
           </svg>
           <span class="button__text">Сохранить на память</span>
         </button>
-      
+        <dialog id="dialog-id"> 
+          <div class="save__content">  
+            <svg class="button__icon-save" viewBox="0 0 40 40">
+                <use href="svg/floppy.svg#floppy" />
+              </svg>
+              <h3 class="button__text button__text-ok">Вставьте дискету, чтобы продолжить</h3>
+          </div> 
+          <button class="button button__ok" type="submit" onclick="window['dialog-id'].close()"><span class="button__text button__text-ok">Ок</span></button>
+        </dialog>
       </section>
     </main>
     <script src="./scripts/like.js"></script>
