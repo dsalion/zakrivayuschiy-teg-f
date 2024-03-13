@@ -1,441 +1,401 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light dark">
-    <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="./styles/variables.css">
-    <link rel="stylesheet" href="./styles/globals.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/animations.css">
-    <link rel="stylesheet" href="./styles/themes.css">
-    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
-    <!-- <link rel="icon" href="./images/favicon.ico" sizes="any" /> -->
-    <link rel="apple-touch-icon" href="./images/favicon.png">
-    <script src="./scripts/set-theme.js"></script>
-  </head>
-  <body class="page">
-    <header class="header">
-      <a class="header__logo">&lt;/HTML&gt;</a>
-      <h1 class="main__header">закрывающий тег</h1>
-      <nav class="theme-menu header__theme-menu">
-        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
-        <ul class="theme-menu__list">
-          <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
-              Темно
-            </button>
-          </li>
-          <li class="theme-menu__item">
-            <button
-              type="button"
-              data-theme="auto"
-              disabled
-              class="theme-menu__button"
-            >
-              Авто
-            </button>
-          </li>
-          <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
-              Светло
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="section__cards">
-        <article class="article">
-          <h2 class="article__header">
-            Фритрек и нулевой спринт: Подготовка к работе
-          </h2>
-            <div class="div__image">
-            <span class="watermark">&lt;/HTML&gt;</span>
-            <img 
-            class="img"
-            src="./images/oneway.jpg"
-            alt="город, две стрелочки с надписью один путь"
-            loading="lazy">
-            </div>
-            <div class="text_block" >
-              <p class="article__text">Это было самое начало пути.  На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
-              <p class="article__text">
-                Заинтересовался созданием сайтов. Получил ссылку на курс от коллеги.
-              </p>
-          </div>
-          <div class="buttons__like">
-            <button class="card__icon-button" type="button">
-            <svg
-            class="like-icon"
-            width="39"
-            height="36"
-            viewBox="0 -4 39 36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            style="border:1px solid crimson"
-           >
-           <g class="heart">
-            <path class="contour" fill="var(--accent-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
-            <path class="main-body" fill="var(--bg-color)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
-            <path class="core" fill="var(--bg-color)" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
-            </g>
-            <path class="sparks" fill="var(--like-color)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
-            
-           
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Закрывающий тег</title>
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./styles/variables.css">
+  <link rel="stylesheet" href="./styles/globals.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/animations.css">
+  <link rel="stylesheet" href="./styles/themes.css">
+  <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
+  <!-- <link rel="icon" href="./images/favicon.ico" sizes="any" /> -->
+  <link rel="apple-touch-icon" href="./images/favicon.png">
+  <script src="./scripts/set-theme.js"></script>
+</head>
+
+<body class="page">
+  <header class="header">
+    <a class="header__logo">&lt;/HTML&gt;</a>
+    <h1 class="main__header">закрывающий тег</h1>
+    <nav class="theme-menu header__theme-menu">
+      <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
+      <ul class="theme-menu__list">
+        <li class="theme-menu__item">
+          <button type="button" data-theme="dark" class="theme-menu__button">
+            Темно
+          </button>
+        </li>
+        <li class="theme-menu__item">
+          <button type="button" data-theme="auto" disabled class="theme-menu__button">
+            Авто
+          </button>
+        </li>
+        <li class="theme-menu__item">
+          <button type="button" data-theme="light" class="theme-menu__button">
+            Светло
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="section__cards">
+      <article class="article">
+        <h2 class="article__header">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h2>
+        <div class="div__image">
+          <span class="watermark">&lt;/HTML&gt;</span>
+          <img class="img" src="./images/oneway.jpg" alt="город, две стрелочки с надписью один путь" loading="lazy">
+        </div>
+        <div class="text_block">
+          <p class="article__text">Это было самое начало пути. На этом этапе важно было проникнуться основами и
+            настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+          <p class="article__text">
+            Заинтересовался созданием сайтов. Получил ссылку на курс от коллеги.
+          </p>
+        </div>
+        <div class="buttons__like">
+          <button class="card__icon-button" type="button">
+            <svg class="like-icon" width="39" height="36" viewBox="0 -4 39 36" fill="none"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="border:1px solid crimson">
+              <g class="heart">
+                <path class="contour" fill="var(--accent-color)"
+                  d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
+                <path class="main-body" fill="var(--bg-color)"
+                  d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
+                <path class="core" fill="var(--bg-color)"
+                  d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
+              </g>
+              <path class="sparks" fill="var(--like-color)"
+                d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
+
+
             </svg>
-            </button>
-            <button class="card__like-button button" type="button">
-              <span class="button__text">Like</span>
-            </button>
-          </div>
-        </article>
-        <article class="article">
-          <h2 class="article__header">
-            1 спринт: Я — чистый лист
-          </h2>
-            <div class="div__image">
-            <span class="watermark">&lt;/HTML&gt;</span>
-            <img 
-            class="img img__opacity"
-            src="./images/strach.jpg"
-            alt="глаз слона"
-            loading="lazy">
-            </div>
-            <div class="text_block">
-              <p class="article__text">На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. Один из них — страх перед чистым листом. 
-                Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим ощущением скрываются более глубокие вопросы: с чего начать?
-                 а вдруг будет слишком сложно? что, если я не справлюсь?</p>
-              <p class="article__text">
-                Долго сидел и не знал с чего начать. Было страшно. Но главное было все же начать. 
-              </p>
-          </div>
-          <div class="buttons__like">
-            <button class="card__icon-button" type="button">
-            <svg
-            class="like-icon"
-            width="39"
-            height="36"
-            viewBox="0 -4 39 36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-           >
-           <g class="heart">
-            <path class="contour" fill="var(--accent-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
-            <path class="main-body" fill="var(--bg-color)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
-            <path class="core" fill="var(--bg-color)" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
-            </g>
-            <path class="sparks" fill="var(--like-color)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
-            
-           
-          </svg>
-        </button>
-            <button class="card__like-button button" type="button">
-              <span class="button__text">Like</span>
-            </button>
-          </div>
-        </article>
-        <article class="article">
-          <h2 class="article__header">
-            1 спринт: А если не получится?
-          </h2>
-            <div class="div__image">
-            <span class="watermark">&lt;CSS&gt;</span>
-            <img 
-            class="img img__grayscale"
-            src="./images/project.jpg"
-            alt="человек идущий перед стеной с граффити"
-            loading="lazy">
-            </div>
-            <div class="text_block">
-              <p class="article__text">Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и смениться ожиданием провала. 
-                Или вы, наоборот, могли вдохновиться успехами и поверить в себя.</p>
-              <p class="article__text">
-                Ужасно злился когда проект не сходился по ПП. Приходилось переделывать
-              </p>
-          </div>
-          <div class="buttons__like">
-            <button class="card__icon-button" type="button">
-            <svg
-            class="like-icon"
-            width="39"
-            height="36"
-            viewBox="0 -4 39 36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-           >
-           <g class="heart">
-            <path class="contour" fill="var(--accent-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
-            <path class="main-body" fill="var(--bg-color)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
-            <path class="core" fill="var(--bg-color)" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
-            </g>
-            <path class="sparks" fill="var(--like-color)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
-            
-           
-          </svg>
-        </button>
-            <button class="card__like-button button"  type="button">
-              <span class="button__text">Like</span>
-            </button>
-          </div>
-        </article>
-        <article class="article">
-          <h2 class="article__header">
-            2 спринт: Погоня за идеалом
-          </h2>
-            <div class="div__image">
-            <span class="watermark">&lt;desigions&gt;</span>
-            <img 
-            class="img img__bright"
-            src="./images/fonar.jpg"
-            alt="женщина осматривающая лампу"
-            loading="lazy">
-            </div>
-            <div class="text_block">
-              <p class="article__text">На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё впереди. 
-                Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы вовсе и не подвержены перфекционизму 
-                и вместо того, чтобы сделать идеально, старались просто сделать.</p>
-                <p class="article__text">
-                По мере того как проект собирался, эмоциональное состояниее менялось то вверх, то вниз.
-              </p>
-          </div>
-          <div class="buttons__like">
-            <button class="card__icon-button" type="button">
-            <svg
-            class="like-icon"
-            width="39"
-            height="36"
-            viewBox="0 -4 39 36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-           >
-           <g class="heart">
-            <path class="contour" fill="var(--accent-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
-            <path class="main-body" fill="var(--bg-color)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
-            <path class="core" fill="var(--bg-color)" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
-            </g>
-            <path class="sparks" fill="var(--like-color)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
-            
-           
-          </svg>
-        </button>
-            <button class="card__like-button button" type="button">
-              <span class="button__text">Like</span>
-            </button>
-          </div>
-        </article>
-        <article class="article">
-          <h2 class="article__header">
-            2 спринт: О тех, кто рядом
-          </h2>
-            <div class="div__image">
-            <span class="watermark">care</span>
-            <img 
-            class="img img__cont_bright"
-            src="./images/tel.jpg"
-            alt="девушка смотрит в телефон"
-            loading="lazy">
-            </div>
-            <div class="text_block">
-              <p class="article__text">Всё это время вы были не одиноки (хотя, возможно, иногда
-                 и чувствовали, что одни против целого мира). Вас окружали одногруппники, команда сопровождения и просто близкие люди, которым можно 
-                 пожаловаться, если очередной макет просто так не поддавался. Осваивать что-то новое легче, когда рядом есть единомышленники, не правда ли?</p>
-                <p class="article__text">
-                  Слава богу есть телеграмм и пачка, куда можно было задать вопросы. Спасибо нашим кураторам! 
-              </p>
-          </div>
-          <div class="buttons__like">
-            <button class="card__icon-button" type="button">
-            <svg
-            class="like-icon"
-            width="39"
-            height="36"
-            viewBox="0 -4 39 36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-           >
-           <g class="heart">
-            <path class="contour" fill="var(--accent-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
-            <path class="main-body" fill="var(--bg-color)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
-            <path class="core" fill="var(--bg-color)" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
-            </g>
-            <path class="sparks" fill="var(--like-color)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
-            
-           
-          </svg>
-        </button>
-            <button class="card__like-button button" type="button">
-              <span class="button__text">Like</span>
-            </button>
-          </div>
-        </article>
-        <article class="article">
-          <h2 class="article__header">
-            3 спринт: Обходные стратегии
-          </h2>
-            <div class="div__image">
-            <span class="watermark">&lt;support&gt;</span>
-            <img 
-            class="img img__saturate"
-            src="./images/tea.jpg"
-            alt="мужчина из доставки на электросамокате"
-            loading="lazy">
-            </div>
-            <div  class="text_block">
-              <p class="article__text">На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться, что решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.</p>
-                <p class="article__text">
-                  Съешь ещё этих мягких французских булок, да выпей чаю! Серьезно, иногда надо просто сделать перерыв.
-              </p>
-          </div>
-          <div class="buttons__like">
-            <button class="card__icon-button" type="button">
-            <svg
-            class="like-icon"
-            width="39"
-            height="36"
-            viewBox="0 -4 39 36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-           >
-           <g class="heart">
-            <path class="contour" fill="var(--accent-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
-            <path class="main-body" fill="var(--bg-color)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
-            <path class="core" fill="var(--bg-color)" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
-            </g>
-            <path class="sparks" fill="var(--like-color)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
-            
-           
-          </svg>
-        </button>
-            <button class="card__like-button button"  type="button">
-              <span class="button__text">Like</span>
-            </button>
-          </div>
-        </article>
-        <article class="article">
-          <h2 class="article__header">
-            3 спринт: Когда опускаются руки
-          </h2>
-            <div class="div__image">
-            <span class="watermark">&lt;lifes-style: none;&gt;</span>
-            <img 
-            class="img img__invert"
-            src="./images/traffic.jpg"
-            alt="город, поезд, автомобили, траффик"
-            loading="lazy">
-            </div>
-            <div class="text_block">
-              <p  class="article__text">Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и проектную пора сдавать, и задачи хочется порешать,
-                 и в теории получше разобраться, и жизнь не забыть пожить. В такие моменты очень нужна концентрация. Вспомните, откуда вы её черпали.</p>
-                <p  class="article__text">
-                 Раставлял приоритеты, все время казалось что не хватает часов в сутках. 
-              </p>
-          </div>
-          <div class="buttons__like">
-            <button class="card__icon-button" type="button">
-            <svg
-            class="like-icon"
-            width="39"
-            height="36"
-            viewBox="0 -4 39 36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-           >
-           <g class="heart">
-            <path class="contour" fill="var(--accent-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
-            <path class="main-body" fill="var(--bg-color)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
-            <path class="core" fill="var(--bg-color)" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
-            </g>
-            <path class="sparks" fill="var(--like-color)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
-            
-           
-          </svg>
-        </button>
-            <button class="card__like-button button" type="button">
-              <span class="button__text">Like</span>
-            </button>
-          </div>
-        </article>
-        <article class="article">
-          <h2 class="article__header">
-            «Сейчас я здесь»
-          </h2>
-            <div class="div__image">
-            <span class="watermark">&lt;experience&gt;</span>
-            <img 
-            class="img img__sepia"
-            src="./images/world.jpg"
-            alt="мужчина перед которым открыт весь мир"
-            loading="lazy">
-            </div>
-            <div class="text_block">
-              <p class="article__text">Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала про «красотищу».
-                 Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир постоянно меняется.
-                  Познать его полностью не получится, но это тот случай, когда важен сам процесс познания. Ведь часто путь — и есть результат.</p>
-                <p class="article__text">
-                  Вот в чем разница между нами: ты тренируешься в гимнастике, а я тренируюсь во всем. 
-                  Я хочу, чтобы ты перестал искать что-то вне себя и прислушался к тому, что у тебя внутри.
-              </p>
-          </div>
-          <div class="buttons__like">
-            <button class="card__icon-button" type="button">
-            <svg
-            class="like-icon"
-            width="39"
-            height="36"
-            viewBox="0 -4 39 36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-           >
-           <g class="heart">
-            <path class="contour" fill="var(--accent-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
-            <path class="main-body" fill="var(--bg-color)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
-            <path class="core" fill="var(--bg-color)" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
-            </g>
-            <path class="sparks" fill="var(--like-color)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
-            
-           
-          </svg>
-        </button>
-            <button class="card__like-button button"  type="button">
-              <span class="button__text">Like</span>
-            </button>
-          </div>
-        </article>
+          </button>
+          <button class="card__like-button button" type="button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+      <article class="article">
+        <h2 class="article__header">
+          1 спринт: Я — чистый лист
+        </h2>
+        <div class="div__image">
+          <span class="watermark">&lt;/HTML&gt;</span>
+          <img class="img img__opacity" src="./images/strach.jpg" alt="глаз слона" loading="lazy">
+        </div>
+        <div class="text_block">
+          <p class="article__text">На первых этапах мы работали со страхами и сомнениями, которые часто испытывают
+            новички. Один из них — страх перед чистым листом.
+            Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим ощущением скрываются более глубокие
+            вопросы: с чего начать?
+            а вдруг будет слишком сложно? что, если я не справлюсь?</p>
+          <p class="article__text">
+            Долго сидел и не знал с чего начать. Было страшно. Но главное было все же начать.
+          </p>
+        </div>
+        <div class="buttons__like">
+          <button class="card__icon-button" type="button">
+            <svg class="like-icon" width="39" height="36" viewBox="0 -4 39 36" fill="none"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <g class="heart">
+                <path class="contour" fill="var(--accent-color)"
+                  d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
+                <path class="main-body" fill="var(--bg-color)"
+                  d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
+                <path class="core" fill="var(--bg-color)"
+                  d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
+              </g>
+              <path class="sparks" fill="var(--like-color)"
+                d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
 
 
-      </section>
-      <section class="save__memories">
-        
-          <button class="button button__save" type="button" aria-controls="dialog-id" onclick="window['dialog-id'].showModal()" >
-          <svg class="button__icon" viewBox="0 0 40 40">
+            </svg>
+          </button>
+          <button class="card__like-button button" type="button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+      <article class="article">
+        <h2 class="article__header">
+          1 спринт: А если не получится?
+        </h2>
+        <div class="div__image">
+          <span class="watermark">&lt;CSS&gt;</span>
+          <img class="img img__grayscale" src="./images/project.jpg" alt="человек идущий перед стеной с граффити"
+            loading="lazy">
+        </div>
+        <div class="text_block">
+          <p class="article__text">Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро
+            померкнуть и смениться ожиданием провала.
+            Или вы, наоборот, могли вдохновиться успехами и поверить в себя.</p>
+          <p class="article__text">
+            Ужасно злился когда проект не сходился по ПП. Приходилось переделывать
+          </p>
+        </div>
+        <div class="buttons__like">
+          <button class="card__icon-button" type="button">
+            <svg class="like-icon" width="39" height="36" viewBox="0 -4 39 36" fill="none"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <g class="heart">
+                <path class="contour" fill="var(--accent-color)"
+                  d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
+                <path class="main-body" fill="var(--bg-color)"
+                  d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
+                <path class="core" fill="var(--bg-color)"
+                  d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
+              </g>
+              <path class="sparks" fill="var(--like-color)"
+                d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
+
+
+            </svg>
+          </button>
+          <button class="card__like-button button" type="button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+      <article class="article">
+        <h2 class="article__header">
+          2 спринт: Погоня за идеалом
+        </h2>
+        <div class="div__image">
+          <span class="watermark">&lt;desigions&gt;</span>
+          <img class="img img__bright" src="./images/fonar.jpg" alt="женщина осматривающая лампу" loading="lazy">
+        </div>
+        <div class="text_block">
+          <p class="article__text">На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как
+            много ещё впереди.
+            Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы вовсе и не подвержены
+            перфекционизму
+            и вместо того, чтобы сделать идеально, старались просто сделать.</p>
+          <p class="article__text">
+            По мере того как проект собирался, эмоциональное состояниее менялось то вверх, то вниз.
+          </p>
+        </div>
+        <div class="buttons__like">
+          <button class="card__icon-button" type="button">
+            <svg class="like-icon" width="39" height="36" viewBox="0 -4 39 36" fill="none"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <g class="heart">
+                <path class="contour" fill="var(--accent-color)"
+                  d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
+                <path class="main-body" fill="var(--bg-color)"
+                  d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
+                <path class="core" fill="var(--bg-color)"
+                  d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
+              </g>
+              <path class="sparks" fill="var(--like-color)"
+                d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
+
+
+            </svg>
+          </button>
+          <button class="card__like-button button" type="button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+      <article class="article">
+        <h2 class="article__header">
+          2 спринт: О тех, кто рядом
+        </h2>
+        <div class="div__image">
+          <span class="watermark">care</span>
+          <img class="img img__cont_bright" src="./images/tel.jpg" alt="девушка смотрит в телефон" loading="lazy">
+        </div>
+        <div class="text_block">
+          <p class="article__text">Всё это время вы были не одиноки (хотя, возможно, иногда
+            и чувствовали, что одни против целого мира). Вас окружали одногруппники, команда сопровождения и просто
+            близкие люди, которым можно
+            пожаловаться, если очередной макет просто так не поддавался. Осваивать что-то новое легче, когда рядом есть
+            единомышленники, не правда ли?</p>
+          <p class="article__text">
+            Слава богу есть телеграмм и пачка, куда можно было задать вопросы. Спасибо нашим кураторам!
+          </p>
+        </div>
+        <div class="buttons__like">
+          <button class="card__icon-button" type="button">
+            <svg class="like-icon" width="39" height="36" viewBox="0 -4 39 36" fill="none"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <g class="heart">
+                <path class="contour" fill="var(--accent-color)"
+                  d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
+                <path class="main-body" fill="var(--bg-color)"
+                  d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
+                <path class="core" fill="var(--bg-color)"
+                  d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
+              </g>
+              <path class="sparks" fill="var(--like-color)"
+                d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
+
+
+            </svg>
+          </button>
+          <button class="card__like-button button" type="button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+      <article class="article">
+        <h2 class="article__header">
+          3 спринт: Обходные стратегии
+        </h2>
+        <div class="div__image">
+          <span class="watermark">&lt;support&gt;</span>
+          <img class="img img__saturate" src="./images/tea.jpg" alt="мужчина из доставки на электросамокате"
+            loading="lazy">
+        </div>
+        <div class="text_block">
+          <p class="article__text">На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло
+            показаться, что решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.</p>
+          <p class="article__text">
+            Съешь ещё этих мягких французских булок, да выпей чаю! Серьезно, иногда надо просто сделать перерыв.
+          </p>
+        </div>
+        <div class="buttons__like">
+          <button class="card__icon-button" type="button">
+            <svg class="like-icon" width="39" height="36" viewBox="0 -4 39 36" fill="none"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <g class="heart">
+                <path class="contour" fill="var(--accent-color)"
+                  d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
+                <path class="main-body" fill="var(--bg-color)"
+                  d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
+                <path class="core" fill="var(--bg-color)"
+                  d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
+              </g>
+              <path class="sparks" fill="var(--like-color)"
+                d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
+
+
+            </svg>
+          </button>
+          <button class="card__like-button button" type="button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+      <article class="article">
+        <h2 class="article__header">
+          3 спринт: Когда опускаются руки
+        </h2>
+        <div class="div__image">
+          <span class="watermark">&lt;lifes-style: none;&gt;</span>
+          <img class="img img__invert" src="./images/traffic.jpg" alt="город, поезд, автомобили, траффик"
+            loading="lazy">
+        </div>
+        <div class="text_block">
+          <p class="article__text">Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и
+            проектную пора сдавать, и задачи хочется порешать,
+            и в теории получше разобраться, и жизнь не забыть пожить. В такие моменты очень нужна концентрация.
+            Вспомните, откуда вы её черпали.</p>
+          <p class="article__text">
+            Раставлял приоритеты, все время казалось что не хватает часов в сутках.
+          </p>
+        </div>
+        <div class="buttons__like">
+          <button class="card__icon-button" type="button">
+            <svg class="like-icon" width="39" height="36" viewBox="0 -4 39 36" fill="none"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <g class="heart">
+                <path class="contour" fill="var(--accent-color)"
+                  d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
+                <path class="main-body" fill="var(--bg-color)"
+                  d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
+                <path class="core" fill="var(--bg-color)"
+                  d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
+              </g>
+              <path class="sparks" fill="var(--like-color)"
+                d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
+
+
+            </svg>
+          </button>
+          <button class="card__like-button button" type="button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+      <article class="article">
+        <h2 class="article__header">
+          «Сейчас я здесь»
+        </h2>
+        <div class="div__image">
+          <span class="watermark">&lt;experience&gt;</span>
+          <img class="img img__sepia" src="./images/world.jpg" alt="мужчина перед которым открыт весь мир"
+            loading="lazy">
+        </div>
+        <div class="text_block">
+          <p class="article__text">Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди
+            ещё много материала про «красотищу».
+            Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир постоянно
+            меняется.
+            Познать его полностью не получится, но это тот случай, когда важен сам процесс познания. Ведь часто путь — и
+            есть результат.</p>
+          <p class="article__text">
+            Вот в чем разница между нами: ты тренируешься в гимнастике, а я тренируюсь во всем.
+            Я хочу, чтобы ты перестал искать что-то вне себя и прислушался к тому, что у тебя внутри.
+          </p>
+        </div>
+        <div class="buttons__like">
+          <button class="card__icon-button" type="button">
+            <svg class="like-icon" width="39" height="36" viewBox="0 -4 39 36" fill="none"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <g class="heart">
+                <path class="contour" fill="var(--accent-color)"
+                  d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
+                <path class="main-body" fill="var(--bg-color)"
+                  d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
+                <path class="core" fill="var(--bg-color)"
+                  d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
+              </g>
+              <path class="sparks" fill="var(--like-color)"
+                d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
+
+
+            </svg>
+          </button>
+          <button class="card__like-button button" type="button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+
+
+    </section>
+    <section class="save__memories">
+
+      <button class="button button__save" type="button" aria-controls="dialog-id"
+        onclick="window['dialog-id'].showModal()">
+        <svg class="button__icon" viewBox="0 0 40 40">
+          <use href="svg/floppy.svg#floppy" />
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+      <dialog id="dialog-id" class="modal__dialog">
+        <div class="save__content">
+          <svg class="modal__icon" viewBox="0 0 40 40">
             <use href="svg/floppy.svg#floppy" />
           </svg>
-          <span class="button__text">Сохранить на память</span>
-        </button>
-        <dialog id="dialog-id" class="modal__dialog"> 
-          <div class="save__content">  
-            <svg class="modal__icon" viewBox="0 0 40 40">
-                <use href="svg/floppy.svg#floppy" />
-              </svg>
-              <h2 class="modal__text">Вставьте дискету, чтобы продолжить</h2>
-          </div> 
-          <form method="dialog">
+          <h2 class="modal__text">Вставьте дискету, чтобы продолжить</h2>
+        </div>
+        <form method="dialog">
           <button class="button modal__button__ok" type="submit"><span class="button__text">Ок</span></button>
-          </form>
-        </dialog>
-      </section>
-    </main>
-    <script src="./scripts/like.js"></script>
-  </body>
+        </form>
+      </dialog>
+    </section>
+  </main>
+  <script src="./scripts/like.js"></script>
+</body>
+
 </html>

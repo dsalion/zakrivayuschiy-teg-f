@@ -29,7 +29,7 @@
 
 .contour {
   fill: var(--accent-color);
-  transform: fill 0.1 linear;
+  transition: fill 0.1s linear;
 }
 
 .core {
