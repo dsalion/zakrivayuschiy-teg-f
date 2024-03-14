@@ -189,7 +189,7 @@
   align-items: center;
   justify-content: end;
   padding-inline-end: 25px;
-  padding-block-end: 23px
+  padding-block-end: 23px;
 }
 
 .card__icon-button {
@@ -377,7 +377,7 @@ dialog::backdrop {
 }
 
 .img__opacity {
-  filter: opacity(55%)
+  filter: opacity(55%);
 }
 
 .img__grayscale {
