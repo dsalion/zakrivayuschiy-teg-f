@@ -16,6 +16,7 @@
     --like-hover-svg: #00CC14;
 }
 
+
 :root.theme-light {
     --main-font-w8: 400;
     --accent-font-w8: 700;
@@ -27,6 +28,7 @@
     --like-hover-color: #fff;
     --like-hover-svg: #000;
 }
+
 
 @media (prefers-color-scheme: dark) {
 :root {
@@ -41,7 +43,4 @@
     --like-hover-svg: #00CC14;
     }
 }
-
-
-
 

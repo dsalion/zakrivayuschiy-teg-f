@@ -105,7 +105,8 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  left: -20px;
+  inset-block-start: 0px;
+  inset-inline-start: -20px;
   animation: pointer 0.5s ease-in-out infinite alternate;
 }
 
@@ -182,7 +183,7 @@
     text-stroke: 1px var(--bg-color);
     text-shadow: none;
   }
-}
+} 
 
 .buttons__like {
   display: flex;
@@ -196,7 +197,8 @@
   background: var(--bg-color);
   border: none;
   cursor: pointer;
-  outline: 2px solid transparent; 
+  outline: 2px solid transparent;
+  padding: 0px;
 }
 
 .button {
@@ -266,7 +268,7 @@
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--accent-color);
-  outline-offset: -2px;
+  outline-offset: -3px;
   transition: outline 0.3s ease;
 }
 
@@ -287,8 +289,6 @@
   align-content: center;
   justify-content: center;
   display: flex;
-  mix-blend-mode: difference;
-  color: var(--like-hover-color);
   font-weight: 400;
   text-transform: uppercase;
   line-height: 21px;
@@ -312,13 +312,12 @@ dialog[open] {
   margin: 30px;
   justify-content: center;
   align-items: center;
+  color: var(--like-hover-svg);
 }
 
 .modal__icon {
   flex: none;
   height: 39px;
-  mix-blend-mode: difference;
-  color: var(--like-hover-color);
 }
 
 .modal__button__ok {
@@ -370,11 +369,7 @@ dialog::backdrop {
   .modal__dialog {
     gap: 30px;
   }
-
-  :root {
-    --card-size: 100%;
-  }
-}
+} 
 
 .img__opacity {
   filter: opacity(55%);
